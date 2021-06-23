@@ -33,11 +33,11 @@ WebUI.click(findTestObject('Object Repository/Page_Dashboard  SegStream/i_Add Pr
 
 WebUI.navigateToUrl('https://dev.segstream.com/project/project-wizard/241/step2/285')
 
-WebUI.setText(findTestObject('Object Repository/Page_Create Project step2  SegStream/input_Name_name'), 'Test 2')
+WebUI.setText(findTestObject('Object Repository/Page_Create Project step2  SegStream/input_Name_name'), 'Test 3')
 
 WebUI.doubleClick(findTestObject('Object Repository/Page_Create Project step2  SegStream/input_Name_name'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Create Project step2  SegStream/input_Name_name'), 'Test 2 06102021')
+WebUI.setText(findTestObject('Object Repository/Page_Create Project step2  SegStream/input_Name_name'), 'Test 3 06162021')
 
 WebUI.setText(findTestObject('Object Repository/Page_Create Project step2  SegStream/input_Zip Code_zipcode'), '50001')
 

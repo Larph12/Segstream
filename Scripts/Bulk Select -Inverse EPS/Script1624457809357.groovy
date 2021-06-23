@@ -29,3 +29,17 @@ WebUI.click(findTestObject('Object Repository/Bulk Select/Page_Login  SegStream/
 
 WebUI.navigateToUrl('https://dev.segstream.com/')
 
+WebUI.click(findTestObject('Object Repository/Bulk Select/Page_Dashboard  SegStream/a_4.  Test case 1 1'))
+
+WebUI.click(findTestObject('Object Repository/Bulk Select/Page_Dashboard  SegStream/a_2500 sheet -0622'))
+
+WebUI.click(findTestObject('Object Repository/Bulk Select/Page_Worksheet  SegStream/a_Bulk Select'))
+
+WebUI.click(findTestObject('Object Repository/Bulk Select/Page_Worksheet  SegStream/i_Select all_fa fa-circle-o'))
+
+WebUI.click(findTestObject('Object Repository/Bulk Select/Page_Worksheet  SegStream/button_Cancel'))
+
+WebUI.click(findTestObject('Object Repository/Bulk Select/Page_Worksheet  SegStream/td_Site Asphalt Paving Parking lot, 90 degr_242053'))
+
+WebUI.verifyImagePresent(findTestObject('Object Repository/Bulk Select/Page_Worksheet  SegStream/td_Site Asphalt Paving Parking lot, 90 degr_242053'))
+
