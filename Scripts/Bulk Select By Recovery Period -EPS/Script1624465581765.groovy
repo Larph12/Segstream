@@ -31,13 +31,16 @@ WebUI.navigateToUrl('https://dev.segstream.com/')
 
 WebUI.navigateToUrl('https://dev.segstream.com/project/take-offsheet/3477/')
 
-WebUI.click(findTestObject('Object Repository/Bulk Select Inverse/Page_Worksheet  SegStream/i_Bulk Select_fa fa-chevron-right pull-righ_42c305'))
+WebUI.click(findTestObject('Object Repository/Select By Location/Page_Worksheet  SegStream/a_Bulk Select'))
 
-WebUI.click(findTestObject('Object Repository/Bulk Select Inverse/Page_Worksheet  SegStream/i_Select inverse_fa fa-circle-o'))
+WebUI.click(findTestObject('Object Repository/Select By Location/Page_Worksheet  SegStream/a_Select By Location'))
 
-WebUI.click(findTestObject('Object Repository/Bulk Select Inverse/Page_Worksheet  SegStream/button_Cancel'))
+WebUI.selectOptionByValue(findTestObject('Object Repository/Select By Location/Page_Worksheet  SegStream/select_Select                              _7774ce'), 
+    '985', true)
 
-WebUI.click(findTestObject('Object Repository/Bulk Select Inverse/Page_Worksheet  SegStream/div_ShowHide Children                Toggle_977276'))
+WebUI.click(findTestObject('Object Repository/Select By Location/Page_Worksheet  SegStream/button_Select Items'))
 
-WebUI.verifyImagePresent(findTestObject('Object Repository/Bulk Select Inverse/Page_Worksheet  SegStream/div_ShowHide Children                Toggle_977276'))
+WebUI.click(findTestObject('Object Repository/Select By Location/Page_Worksheet  SegStream/button_Cancel'))
+
+WebUI.click(findTestObject('Object Repository/Select By Location/Page_Worksheet  SegStream/td_Exterior Doors Door, steel 18 gauge, hol_8dae32'))
 

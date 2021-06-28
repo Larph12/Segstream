@@ -21,23 +21,28 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://dev.segstream.com/account/login/')
 
-WebUI.setText(findTestObject('Object Repository/Bulk Select/Page_Login  SegStream/input_Email_email'), 'ralphninojasmin@yahoo.com')
+WebUI.setText(findTestObject('Object Repository/Page_Login  SegStream/input_Email_email'), 'info@segstream.com')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Bulk Select/Page_Login  SegStream/input_Password_password'), 'p4y+y39Ir5PJb2ispxT0Ew==')
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Login  SegStream/input_Password_password'), 'yr2bZZvQ58ur+DfKXurYpNk5/flLxgCE')
 
-WebUI.click(findTestObject('Object Repository/Bulk Select/Page_Login  SegStream/input_Password_btn btn-primary btn-md'))
+WebUI.click(findTestObject('Object Repository/Page_Login  SegStream/input_Password_btn btn-primary btn-md'))
 
-WebUI.navigateToUrl('https://dev.segstream.com/')
+WebUI.click(findTestObject('Object Repository/Page_Dashboard  SegStream/button_Add Project'))
 
-WebUI.navigateToUrl('https://dev.segstream.com/project/take-offsheet/3477/')
+WebUI.setText(findTestObject('Object Repository/Page_Dashboard  SegStream/input_Project Name_title'), 'April Test Project')
 
-WebUI.click(findTestObject('Object Repository/Bulk Select Inverse/Page_Worksheet  SegStream/i_Bulk Select_fa fa-chevron-right pull-righ_42c305'))
+WebUI.click(findTestObject('Object Repository/Page_Dashboard  SegStream/button_Save'))
 
-WebUI.click(findTestObject('Object Repository/Bulk Select Inverse/Page_Worksheet  SegStream/i_Select inverse_fa fa-circle-o'))
+WebUI.setText(findTestObject('Object Repository/Page_Create Project Step1  SegStream/textarea_(Note Hit enter to add multiple en_0897f8'), 
+    'Test_1')
 
-WebUI.click(findTestObject('Object Repository/Bulk Select Inverse/Page_Worksheet  SegStream/button_Cancel'))
+WebUI.click(findTestObject('Object Repository/Page_Create Project Step1  SegStream/input_(Note Hit enter to add multiple entit_2f1426'))
 
-WebUI.click(findTestObject('Object Repository/Bulk Select Inverse/Page_Worksheet  SegStream/div_ShowHide Children                Toggle_977276'))
+WebUI.setText(findTestObject('Object Repository/Page_Create Project step2  SegStream/input_Name_name'), 'April 21')
 
-WebUI.verifyImagePresent(findTestObject('Object Repository/Bulk Select Inverse/Page_Worksheet  SegStream/div_ShowHide Children                Toggle_977276'))
+WebUI.setText(findTestObject('Object Repository/Page_Create Project step2  SegStream/input_Zip Code_zipcode'), '50001')
+
+WebUI.click(findTestObject('Object Repository/Page_Create Project step2  SegStream/button_Add Property'))
+
+WebUI.closeBrowser()
 

@@ -21,23 +21,24 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://dev.segstream.com/account/login/')
 
-WebUI.setText(findTestObject('Object Repository/Bulk Select/Page_Login  SegStream/input_Email_email'), 'ralphninojasmin@yahoo.com')
+WebUI.setText(findTestObject('Object Repository/Page_Login  SegStream/input_Email_email'), 'ralphninojasmin@yahoo.com')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Bulk Select/Page_Login  SegStream/input_Password_password'), 'p4y+y39Ir5PJb2ispxT0Ew==')
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Login  SegStream/input_Password_password'), 'p4y+y39Ir5PJb2ispxT0Ew==')
 
-WebUI.click(findTestObject('Object Repository/Bulk Select/Page_Login  SegStream/input_Password_btn btn-primary btn-md'))
+WebUI.click(findTestObject('Object Repository/Page_Login  SegStream/input_Password_btn btn-primary btn-md'))
 
-WebUI.navigateToUrl('https://dev.segstream.com/')
+WebUI.navigateToUrl('https://dev.segstream.com/project/take-offsheet/2749/')
 
-WebUI.navigateToUrl('https://dev.segstream.com/project/take-offsheet/3477/')
+WebUI.click(findTestObject('Object Repository/Page_Worksheet  SegStream/a_Costs Setup'))
 
-WebUI.click(findTestObject('Object Repository/Bulk Select Inverse/Page_Worksheet  SegStream/i_Bulk Select_fa fa-chevron-right pull-righ_42c305'))
+WebUI.click(findTestObject('Object Repository/Page_Worksheet  SegStream/a_Direct Costs'))
 
-WebUI.click(findTestObject('Object Repository/Bulk Select Inverse/Page_Worksheet  SegStream/i_Select inverse_fa fa-circle-o'))
+WebUI.navigateToUrl('https://dev.segstream.com/project/cost-setup/2749/')
 
-WebUI.click(findTestObject('Object Repository/Bulk Select Inverse/Page_Worksheet  SegStream/button_Cancel'))
+WebUI.click(findTestObject('Object Repository/Page_Direct Costs Setup  SegStream/div_Description                        Cost_3ca7c7'))
 
-WebUI.click(findTestObject('Object Repository/Bulk Select Inverse/Page_Worksheet  SegStream/div_ShowHide Children                Toggle_977276'))
+WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Direct Costs Setup  SegStream/div_Description                        Cost_3ca7c7'), 
+    0)
 
-WebUI.verifyImagePresent(findTestObject('Object Repository/Bulk Select Inverse/Page_Worksheet  SegStream/div_ShowHide Children                Toggle_977276'))
+WebUI.closeBrowser()
 

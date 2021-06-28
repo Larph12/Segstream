@@ -21,23 +21,25 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://dev.segstream.com/account/login/')
 
-WebUI.setText(findTestObject('Object Repository/Bulk Select/Page_Login  SegStream/input_Email_email'), 'ralphninojasmin@yahoo.com')
+WebUI.setText(findTestObject('Object Repository/Page_Login  SegStream/input_Email_email'), 'info@segstream.com')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Bulk Select/Page_Login  SegStream/input_Password_password'), 'p4y+y39Ir5PJb2ispxT0Ew==')
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Login  SegStream/input_Password_password'), 'yr2bZZvQ58ur+DfKXurYpNk5/flLxgCE')
 
-WebUI.click(findTestObject('Object Repository/Bulk Select/Page_Login  SegStream/input_Password_btn btn-primary btn-md'))
+WebUI.click(findTestObject('Object Repository/Page_Login  SegStream/input_Password_btn btn-primary btn-md'))
 
-WebUI.navigateToUrl('https://dev.segstream.com/')
+WebUI.click(findTestObject('Object Repository/Page_Dashboard  SegStream/a_1.  April Test Project 1'))
 
-WebUI.navigateToUrl('https://dev.segstream.com/project/take-offsheet/3477/')
+WebUI.click(findTestObject('Object Repository/Page_Dashboard  SegStream/i_Add Property_fa fa-plus-circle'))
 
-WebUI.click(findTestObject('Object Repository/Bulk Select Inverse/Page_Worksheet  SegStream/i_Bulk Select_fa fa-chevron-right pull-righ_42c305'))
+WebUI.navigateToUrl('https://dev.segstream.com/project/project-wizard/241/step2/285')
 
-WebUI.click(findTestObject('Object Repository/Bulk Select Inverse/Page_Worksheet  SegStream/i_Select inverse_fa fa-circle-o'))
+WebUI.setText(findTestObject('Object Repository/Page_Create Project step2  SegStream/input_Name_name'), 'Test 3')
 
-WebUI.click(findTestObject('Object Repository/Bulk Select Inverse/Page_Worksheet  SegStream/button_Cancel'))
+WebUI.doubleClick(findTestObject('Object Repository/Page_Create Project step2  SegStream/input_Name_name'))
 
-WebUI.click(findTestObject('Object Repository/Bulk Select Inverse/Page_Worksheet  SegStream/div_ShowHide Children                Toggle_977276'))
+WebUI.setText(findTestObject('Object Repository/Page_Create Project step2  SegStream/input_Name_name'), 'Test 3 06162021')
 
-WebUI.verifyImagePresent(findTestObject('Object Repository/Bulk Select Inverse/Page_Worksheet  SegStream/div_ShowHide Children                Toggle_977276'))
+WebUI.setText(findTestObject('Object Repository/Page_Create Project step2  SegStream/input_Zip Code_zipcode'), '50001')
+
+WebUI.click(findTestObject('Object Repository/Page_Create Project step2  SegStream/button_I Just Want to Input Costs - Take me_85697e'))
 

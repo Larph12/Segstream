@@ -31,13 +31,18 @@ WebUI.navigateToUrl('https://dev.segstream.com/')
 
 WebUI.navigateToUrl('https://dev.segstream.com/project/take-offsheet/3477/')
 
-WebUI.click(findTestObject('Object Repository/Bulk Select Inverse/Page_Worksheet  SegStream/i_Bulk Select_fa fa-chevron-right pull-righ_42c305'))
+WebUI.click(findTestObject('Object Repository/Select by Asset Class/Page_Worksheet  SegStream/i_Bulk Select_fa fa-chevron-right pull-righ_42c305'))
 
-WebUI.click(findTestObject('Object Repository/Bulk Select Inverse/Page_Worksheet  SegStream/i_Select inverse_fa fa-circle-o'))
+WebUI.click(findTestObject('Object Repository/Select by Asset Class/Page_Worksheet  SegStream/a_Select By Asset Class'))
 
-WebUI.click(findTestObject('Object Repository/Bulk Select Inverse/Page_Worksheet  SegStream/button_Cancel'))
+WebUI.selectOptionByValue(findTestObject('Object Repository/Select by Asset Class/Page_Worksheet  SegStream/select_Select                            No_0267b3'), 
+    '15', true)
 
-WebUI.click(findTestObject('Object Repository/Bulk Select Inverse/Page_Worksheet  SegStream/div_ShowHide Children                Toggle_977276'))
+WebUI.click(findTestObject('Object Repository/Select by Asset Class/Page_Worksheet  SegStream/button_Select Items'))
 
-WebUI.verifyImagePresent(findTestObject('Object Repository/Bulk Select Inverse/Page_Worksheet  SegStream/div_ShowHide Children                Toggle_977276'))
+WebUI.click(findTestObject('Object Repository/Select by Asset Class/Page_Worksheet  SegStream/button_Cancel'))
+
+WebUI.click(findTestObject('Object Repository/Select by Asset Class/Page_Worksheet  SegStream/strong_Site Incoming Water SVC Water distri_da8a6b'))
+
+WebUI.verifyImagePresent(findTestObject('Object Repository/Select by Asset Class/Page_Worksheet  SegStream/strong_Site Incoming Water SVC Water distri_da8a6b'))
 
