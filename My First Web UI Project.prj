@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
    <description></description>
-   <name>My First Web UI Project</name>
+   <name>Segstream</name>
    <tag></tag>
    <UUID>5aa92d00-fea9-48e3-81f8-a6f3161443c4</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>C:\Users\acer\Katalon Studio\My First Web UI Project\My First Web UI Project.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
