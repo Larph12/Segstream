@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://dev.segstream.com/account/login/')
+WebUI.navigateToUrl('https://staging.segstream.com/account/login/')
 
 WebUI.setText(findTestObject('Object Repository/Page_Login  SegStream/input_Email_email'), 'info@segstream.com')
 
@@ -31,7 +31,7 @@ WebUI.click(findTestObject('Object Repository/Page_Dashboard  SegStream/a_1.  Ap
 
 WebUI.click(findTestObject('Object Repository/Page_Dashboard  SegStream/i_Add Property_fa fa-plus-circle'))
 
-WebUI.navigateToUrl('https://dev.segstream.com/project/project-wizard/241/step2/285')
+WebUI.navigateToUrl('https://staging.segstream.com/project/project-wizard/241/step2/285')
 
 WebUI.setText(findTestObject('Object Repository/Page_Create Project step2  SegStream/input_Name_name'), 'Test 3')
 
