@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://dev.segstream.com/account/login/')
+WebUI.navigateToUrl('https://staging.segstream.com/account/login/')
 
 WebUI.setText(findTestObject('Object Repository/Page_Login  SegStream/input_Email_email'), 'info@segstream.com')
 
@@ -27,7 +27,7 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Page_Login  SegStream/i
 
 WebUI.click(findTestObject('Object Repository/Page_Login  SegStream/input_Password_btn btn-primary btn-md'))
 
-WebUI.navigateToUrl('https://dev.segstream.com/project/take-offsheet/3340/')
+WebUI.navigateToUrl('https://staging.segstream.com/project/take-offsheet/3340/')
 
 WebUI.click(findTestObject('Object Repository/Page_Worksheet  SegStream/button_Add Takeoff or Costs'))
 
@@ -52,5 +52,5 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Worksheet  SegS
 
 WebUI.click(findTestObject('Object Repository/Page_Worksheet  SegStream/button_Save'))
 
-WebUI.navigateToUrl('https://dev.segstream.com/project/take-offsheet/3340/#')
+WebUI.navigateToUrl('https://staging.segstream.com/project/take-offsheet/3340/#')
 

@@ -23,7 +23,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
 WebUI.openBrowser('', FailureHandling.OPTIONAL)
 
-WebUI.navigateToUrl('https://dev.segstream.com/account/login/', FailureHandling.OPTIONAL)
+WebUI.navigateToUrl('https://staging.segstream.com/account/login/')
 
 WebUI.setText(findTestObject('Object Repository/Page_Login  SegStream/input_Email_email'), 'ralphninojasmin@yahoo.com', 
     FailureHandling.OPTIONAL)
@@ -33,7 +33,7 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Page_Login  SegStream/i
 
 WebUI.click(findTestObject('Object Repository/Page_Login  SegStream/input_Password_btn btn-primary btn-md'), FailureHandling.OPTIONAL)
 
-WebUI.navigateToUrl('https://dev.segstream.com/project/take-offsheet/2750/')
+WebUI.navigateToUrl('https://staging.segstream.com/project/take-offsheet/2750/')
 
 WebUI.doubleClick(findTestObject('Object Repository/Page_Worksheet  SegStream/strong_Site Concrete Paving Slab on grade, _365aab'), 
     FailureHandling.CONTINUE_ON_FAILURE)
@@ -43,7 +43,7 @@ WebUI.doubleClick(findTestObject('Object Repository/Page_Worksheet  SegStream/st
 
 WebUI.click(findTestObject('Object Repository/Page_Worksheet  SegStream/button_Save'))
 
-WebUI.navigateToUrl('https://dev.segstream.com/project/take-offsheet/2750/')
+WebUI.navigateToUrl('https://staging.segstream.com/project/take-offsheet/2750/')
 
 WebUI.verifyMatch(WebUI.getUrl(), 'https://dev.segstream.com/project/take-offsheet/2750/', false)
 

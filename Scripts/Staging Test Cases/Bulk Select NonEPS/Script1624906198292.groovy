@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://dev.segstream.com/account/login/')
+WebUI.navigateToUrl('https://staging.segstream.com/account/login/')
 
 WebUI.setText(findTestObject('Object Repository/Bulk Select/Page_Login  SegStream/input_Email_email'), 'ralphninojasmin@yahoo.com')
 
@@ -27,7 +27,7 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Bulk Select/Page_Login 
 
 WebUI.click(findTestObject('Object Repository/Bulk Select/Page_Login  SegStream/input_Password_btn btn-primary btn-md'))
 
-WebUI.navigateToUrl('https://dev.segstream.com/')
+WebUI.navigateToUrl('https://staging.segstream.com')
 
 WebUI.click(findTestObject('Object Repository/Bulk Select/Page_Dashboard  SegStream/a_4.  Test case 1 1'))
 
